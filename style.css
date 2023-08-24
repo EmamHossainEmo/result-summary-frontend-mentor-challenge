@@ -1,0 +1,230 @@
+/*
+===========================
+SHARED CSS
+===========================
+*/
+
+html {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 100vw;
+}
+
+h1,
+h2,
+#button {
+  color: rgb(255, 255, 255);
+}
+
+h2,
+h4,
+span,
+#reaction,
+#memory,
+#verbal,
+#visual {
+  font-weight: 700;
+}
+
+/*
+===========================
+RESULT SECTION STYLES
+===========================
+*/
+
+.result-section,
+.result-score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.result-section {
+  color: rgba(255, 255, 255, 0.6);
+  background: linear-gradient(rgb(120, 87, 255), rgb(46, 43, 233));
+  border-radius: 0 0 30px 30px;
+  padding: 20px 10%;
+  text-align: center;
+
+  justify-content: space-evenly;
+}
+
+.result-section > * {
+  margin: 10px 5%;
+}
+
+.result-score {
+  background: linear-gradient(rgb(78, 33, 202, 1), rgba(36, 33, 202, 0));
+  width: 130px;
+  height: 130px;
+  padding: 30px;
+  border-radius: 50%;
+
+  justify-content: space-evenly;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+#feedback {
+  font-size: 0.8rem;
+}
+
+/*
+===========================
+SUMMARY SECTION STYLES
+===========================
+*/
+
+.summary-section > * {
+  margin: 5%;
+}
+
+article {
+  padding: 5%;
+  font-size: 0.8rem;
+  border-radius: 10px;
+  color: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icons {
+  margin-right: 10px;
+}
+
+span {
+  color: rgb(0, 0, 0);
+}
+
+#reaction,
+#memory,
+#verbal,
+#visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reaction-div {
+  background-color: rgba(255, 87, 87, 0.05);
+}
+
+#reaction {
+  color: rgb(255, 87, 87);
+}
+
+.memory-div {
+  background-color: rgba(255, 176, 31, 0.05);
+}
+
+#memory {
+  color: rgb(255, 176, 31);
+}
+
+.verbal-div {
+  background-color: rgba(0, 189, 145, 0.05);
+}
+
+#verbal {
+  color: rgb(0, 189, 145);
+}
+
+.visual-div {
+  background-color: rgba(17, 37, 212, 0.05);
+}
+
+#visual {
+  color: rgb(17, 37, 212);
+}
+
+#button {
+  background-color: rgb(48, 59, 90);
+  width: 90%;
+  margin: 0 5% 5% 5%;
+  padding: 5%;
+  font-size: 1rem;
+  border-radius: 50px;
+  border: none;
+}
+
+#button:hover {
+  background: linear-gradient(rgb(120, 87, 255), rgb(46, 43, 233));
+  cursor: pointer;
+}
+
+/*
+===========================
+FOOTER STYLES
+===========================
+*/
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: relative;
+  bottom: 10px;
+}
+
+.attribution a {
+  color: rgb(62, 82, 163);
+}
+
+/*
+===========================
+BREAKPOINTS
+===========================
+*/
+
+@media (min-width: 576px) {
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  main {
+    width: 600px;
+    height: 400px;
+    border-radius: 30px;
+    box-shadow: 2px 5px 20px 0 rgb(235, 241, 255);
+    margin: 20px;
+
+    display: flex;
+  }
+
+  .result-section {
+    width: 300px;
+    border-radius: 30px;
+    padding: 20px 40px;
+  }
+
+  .summary-section {
+    width: 300px;
+    padding: 10px;
+  }
+
+  .summary-section > * {
+    margin: 20px;
+  }
+
+  article {
+    padding: 10px;
+  }
+}
